@@ -6,8 +6,12 @@ import importlib
 
 from sphinx.util.console import bold
 from sphinx.ext.autodoc import Documenter
+from sphinx.util import logging
 
 from . import analyzers
+
+
+logger = logging.getLogger(__name__)
 
 
 class AnySrcDocumenter(Documenter):
@@ -58,7 +62,7 @@ class AnySrcDocumenter(Documenter):
             cls.register_analyzer(key, import_class(value))
 
     def info(self, msg):
-        self.directive.env.app.info('    <autoanysrc> %s' % msg)
+        logger.info('    <autoanysrc> %s' % msg)
 
     def collect_files(self):
         arg = self.options.src
