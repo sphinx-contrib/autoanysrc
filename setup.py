@@ -11,7 +11,7 @@ here = os.path.dirname(os.path.abspath(__file__))
 
 
 requires = [
-    'Sphinx>=0.6',
+    'Sphinx>1.6',
 ]
 
 
