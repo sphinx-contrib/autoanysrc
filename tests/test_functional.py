@@ -46,7 +46,7 @@ def with_runsphinx(builder, confoverrides=None):
 
     def wrapfunc(func):
         def test():
-            src = '\n'.join(l[4:] for l in func.__doc__.splitlines()[2:])
+            src = '\n'.join(i[4:] for i in func.__doc__.splitlines()[2:])
             os.mkdir(_outdir)
             try:
                 runsphinx(src, builder, confoverrides)
