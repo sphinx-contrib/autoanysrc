@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sphinxcontrib-autoanysrc"
-version = "0.1.0"
+version = "0.1.1"
 description = "Sphinx extension with some autodoc features for any sources"
 authors = ["Evgeniy Tatarkin <tatarkin.evg@gmail.com>"]
 license = "BSD"
@@ -24,7 +24,7 @@ packages = [
 
 
 [tool.poetry.dependencies]
-Sphinx = "^1.6"
+Sphinx = ">=1.6, <5.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
