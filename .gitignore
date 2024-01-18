@@ -4,3 +4,5 @@ Pipfile
 /__pycache__/
 *.pyc
 dist
+.python-version
+poetry.lock
